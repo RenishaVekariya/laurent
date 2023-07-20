@@ -1,0 +1,193 @@
+@media(max-width:320px)
+{
+  header
+  {
+    padding: 10 !important;
+  }
+  .gallery-breadcrumb .gall-breadcrumb 
+  {
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width:480px) {
+  .eltdf-comment
+  {
+    flex-wrap: wrap;
+  }
+  .eltdf-comment-text {
+    padding-left: 0px;
+}
+.sildar-content p 
+{
+  margin: 0;
+}
+#banner .owl-nav button.owl-prev, #banner .owl-nav button.owl-next ,#ab-slidar .owl-nav button.owl-prev ,#ab-slidar .owl-nav button.owl-next
+{
+  display: none;
+}
+
+header .row
+{
+  flex-wrap: nowrap;
+}
+
+}
+
+@media (max-width:576px) {
+.booking-table .intro-titile p
+{
+  font-size: 31px;
+}
+.title-holdar .decor 
+{
+  display: none;
+}
+.intro-titile .title-holdar p
+{
+  font-size: 26px;
+}
+
+
+}
+@media (min-width:576px)
+{
+  .container
+  {
+    width: 540px;
+    padding: 0 15px;
+   
+  }
+
+}
+
+
+@media (max-width:767px) {
+  .booking-table
+  {
+    background-image: none;
+  }
+  #testimonial
+  {
+    padding: 23% 5%;
+  }
+  .sildar-content h1
+  {
+    font-size: 42px;
+  }
+
+  .about-img , .about-patt
+  {
+    padding-top: 80px;
+  }
+  .laurant-details .post-title h4 
+  {
+    font-size: 22px;
+  }
+  .author-des-content
+  {
+    padding: 30px;
+  }
+  .eltdf-comment-2 
+  {
+    padding-left: 0;
+  }
+  .author-box
+  {
+    flex-wrap: wrap;
+  }
+  .post-comment-standard h3
+  {
+    font-size: 19px;
+  }
+.eltdf-grid-row input[type=text]{
+  margin-bottom: 25px;
+}
+.author-box img
+{   
+   margin: 35px auto 0;
+}
+}
+@media (min-width:768px)
+{
+  .container
+  {
+    width: 720px;
+    padding: 0 15px;
+   
+  }
+}
+
+@media (max-width:992px)
+{
+  #testimonial
+  {
+    padding: 23% 5%;
+
+  }
+
+  header
+  {
+   
+    padding: 20px;
+  }
+
+  
+  .mobile-menu .mo-main-menu li {
+    position: relative;
+    /* float: left; */
+    width: 100%;
+  }
+
+  .mobile-menu .mo-main-menu li a {
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+    display: block;
+    padding: 15px 5%;
+    line-height: 22px;
+    font-weight: 400;
+    border-top: 1px solid #e0e3ed;
+    padding-left: 0;
+  }
+
+  .mobile-menu .mo-main-menu li a i {
+    position: absolute;
+    right: 0;
+    border: 1px solid var(--light-grey);
+    padding: 6px;
+    font-size: 15px;
+  }
+  .eltdf-rf-col-holder.booking-btn button
+{
+  width: 100%;
+}
+.two-col-port .eltdf-pli-image.gall-img .image-content
+{
+  left: 15%;
+}
+}
+
+@media (max-width:1199px)
+{
+  .tips-content
+  {
+    padding: 20px 0 0 10px;
+    margin-top: 30px;
+  }
+  
+}
+
+
+
+
+@media (min-width:1200px) {
+ 
+  .container
+  {
+    width: 960px;
+    padding: 0 15px;
+   
+  }
+     
+}

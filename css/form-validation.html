@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-validation</title>
+</head>
+
+<style>
+    input
+    {
+        width: 90%;
+        padding: 5PX;
+    }
+</style>
+<body>
+
+    <form action="" onsubmit="return frm_validation()">
+        <table cellspacing="0" cellpadding="15" align="center" style="text-align: center ; border: 1px solid black; width: 50%;">
+            <caption>REGISTER FORM</caption>
+
+            <tr>
+                <td>Username:-</td>
+                <td><input type="text" id="user" placeholder="Username"></td>
+            </tr>
+            
+            <tr>
+                <td>Email:-</td>
+                <td><input type="text" id="email" placeholder="Enter Email"></td>
+            </tr>
+
+            <tr>
+                <td>Mobile No:-</td>
+                <td><input type="text" id="mo-num" placeholder="Enter Mobile No"></td>
+            </tr>
+
+            
+            <tr>
+                <td>DOB:-</td>
+                <td><input type="date" id="dob"></td>
+            </tr>
+
+            <tr>
+                <td>Gendar:-</td>
+                <td align="left">
+                    <label for=""><input type="radio"  name="gen" style="width: 10%;" >Male</label>
+                    <label for=""><input type="radio"  name="gen" style="width: 10%;">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="password" id="psw" placeholder="Enter Password"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="password" id="conform" placeholder="conform Password"></td>
+            </tr>
+
+             
+            <tr>
+                <td>Course :-</td>
+                <td>
+                    <select name="" id="course" style="width: 90%; padding: 5px;">
+                        <option value="">select course</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="Fullter">Fullter</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+             
+                <td><input type="submit" id="sub" value="Register" ></td>
+            </tr>
+
+
+            
+        </table>
+    </form>
+    
+
+    <script>
+
+        function frm_validation()
+        {
+            var name = document.getElementById('user').value;
+            var email= document.getElementById('email').value;
+            var mobile = document.getElementById('mo-num').value;
+            var course = document.getElementById('course').value;
+            var dob = document.getElementById('dob').value;
+            var gender = document.getElementsByName('gen');
+            var password = document.getElementById('psw').value;
+            var conform = document.getElementById('conform').value;
+
+            var ps_word = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
+            var E_valid = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/
+
+            if(name == "")
+            {
+                alert('please enter username')
+                return false
+            }
+
+            if(mobile == "")
+            {
+                alert('please enter mobile number')
+                return false
+            }
+            if(dob == "")
+            {
+                alert('please enter birth date')
+                return false
+            }
+            if(gender[0].checked == false && gender[1].checked == false)
+            {
+                alert('please select gender')
+                return false
+
+            }
+            if(password.match(ps_word) == null)
+            {
+                alert('please enter vaild password')
+                return false
+            }
+
+            if(password.match(conform) == null)
+            {
+                alert('password is wrong')
+                return false
+            }
+
+            if(email.match(E_valid) == null)
+            {
+                alert('please enter email')
+                return false
+            }
+        }
+
+    </script>
+</body>
+</html>

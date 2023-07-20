@@ -1,0 +1,2163 @@
+/* josefin-sans-200 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/josefin-sans-v26-latin-200.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* josefin-sans-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/josefin-sans-v26-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* josefin-sans-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/josefin-sans-v26-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* josefin-sans-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/josefin-sans-v26-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* josefin-sans-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/josefin-sans-v26-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* josefin-sans-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/josefin-sans-v26-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-family: 'Miniver';
+    src: url('Miniver.eot');
+    src: local('Miniver'),
+        url('../fonts/Miniver.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Miniver.woff2') format('woff2'),
+        url('../fonts/Miniver.woff') format('woff'),
+        url('../fonts/Miniver.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('OpenSansCondensed-Light.eot');
+    src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'),
+        url('../fonts/OpenSansCondensed-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSansCondensed-Light.woff2') format('woff2'),
+        url('../fonts/OpenSansCondensed-Light.woff') format('woff'),
+        url('../fonts/OpenSansCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Metropolis 1920';
+    src: url('../fonts/Metropolis1920.eot');
+    src: local('Metropolis 1920'), local('Metropolis1920'),
+        url('../fonts/Metropolis1920.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Metropolis1920.woff2') format('woff2'),
+        url('../fonts/Metropolis1920.woff') format('woff'),
+        url('../fonts/Metropolis1920.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('CaviarDreams-Bold.eot');
+    src: local('Caviar Dreams Bold'), local('CaviarDreams-Bold'),
+        url('../fonts/') format('embedded-opentype'),
+        url('../fonts/CaviarDreams-Bold.woff2') format('woff2'),
+        url('../fonts/CaviarDreams-Bold.woff') format('woff'),
+        url('../fonts/CaviarDreams-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* =============================================  default css================================== */
+:root {
+    --primary-color: #C9AB81;
+    --secondary-color: #0F1D22;
+    --dark-color: #0B1315;
+    --border-color: #715B3E;
+    --white-color: #ffffff;
+    --text-color: #ffffffcc;
+    --body-fonts: 'Josefin Sans', sans-serif;
+    --title-fonts: 'Josefin Sans', sans-serif;
+    --sub-title-fonts: 'Miniver', cursive;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-fonts);
+    color: var(--white-color);
+    font-weight: 300;
+    background-color: #000000;
+    position: relative;
+}
+
+/* .container {
+    max-width: 100%;
+   
+} */
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Caviar Dreams';
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: var(--white-color);
+    transition: all 0.5s ease-in-out;
+}
+
+img {
+    transition: all 0.5s ease-in-out;
+}
+
+.spacer {
+    padding: 150px 0;
+}
+
+/* ------------------  header scroll fixed ----------------------------------- */
+.top_fixed {
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    top: 0;
+    animation: top_fixed 1s;
+    background-color: var(--dark-color);;
+}
+
+@keyframes top_fixed {
+    from {
+        transform: translateY(-160px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* ---------------------------- top_scroll -------------------- */
+.top_scroll {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px var(--primary-color);
+    line-height: 46px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 6;
+    transition: all 200ms linear;
+}
+
+.transform {
+    transform: translateY(10px);
+}
+
+/* ---------------------  border css ------------------------------ */
+.grid-left {
+
+    position: fixed;
+    top: 0;
+    left: 110px;
+    height: 100vh;
+    width: 0;
+    border-left: 1px solid var(--border-color);
+    z-index: 32;
+}
+
+.grid-right {
+    position: fixed;
+    top: 0;
+    right: 110px;
+    height: 100vh;
+    width: 0;
+    border-right: 1px solid var(--border-color);
+    z-index: 32;
+}
+
+.grid-top {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+}
+
+/* ==================================  header css =================================================== */
+.container-fuild {
+    padding: 0 35px;
+}
+
+.logo-header {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-header img {
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom: 1px solid var(--border-color);
+    
+}
+
+.main-menu li {
+    position: relative;
+    padding: 35px 30px;
+}
+
+.main-menu li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .36em;
+    display: inline-block;
+    color: var(--white-color);
+    position: relative;
+    font-family: 'Open Sans Condensed';
+
+}
+
+.main-menu li>.sub-menu,
+.peta-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background-color: var(--secondary-color);
+    transform-origin: top;
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+
+.main-menu li>.sub-menu-shop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background-color: var(--secondary-color);
+    transform-origin: top;
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
+    text-align: right;
+}
+
+.peta-menu-shop {
+    position: absolute;
+    top: 0%;
+    right: 115%;
+    width: 250px;
+    background-color: var(--secondary-color);
+    transform-origin: top;
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
+    text-align: right;
+}
+
+.peta-menu {
+    left: 115%;
+    top: 0;
+}
+
+.main-menu li>.sub-menu li,
+.main-menu li>.sub-menu-shop li {
+    padding: 0;
+    margin: 15px 0;
+}
+
+.main-menu li>.sub-menu li a,
+.main-menu li>.sub-menu-shop li a {
+    font-size: 17px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Josefin Sans';
+
+}
+
+.main-menu li>.sub-menu li a::before,  .laurant-details .about ul li a::before, 
+.main-menu li>.sub-menu-shop li a::before,
+.main-menu li a::before,
+.peta-menu li a::before,
+.peta-menu-shop li a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0.5px;
+    top: 110%;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: .5s cubic-bezier(.48, .57, .33, .89) .5s;
+
+}
+
+.main-menu li>.sub-menu li a.active::before, 
+.main-menu li>.sub-menu-shop li a.active::before,
+.main-menu li>.sub-menu li a.active::after,
+.main-menu li>.sub-menu-shop li a.active::after,
+.main-menu li a.active::before,
+.main-menu li a.active::after {
+    width: 100%;
+}
+
+.main-menu li>.sub-menu li a::after,
+.main-menu li>.sub-menu-shop li a::after,.laurant-details .about ul li a::after,
+.main-menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0.5px;
+    top: 95%;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: .2s cubic-bezier(.48, .57, .33, .89) .3s;
+
+}
+
+.main-menu li>.sub-menu li a:hover::before, .laurant-details .about ul li a:hover::before , .laurant-details .about ul li a:hover::after,
+.main-menu li>.sub-menu-shop li a:hover::before,
+.main-menu li>.sub-menu li a:hover::after,
+.main-menu li>.sub-menu-shop li a:hover::after,
+.main-menu li:hover a::before,
+.main-menu li:hover a::after {
+    width: 100%;
+}
+
+.main-menu li:hover .sub-menu,
+.sub-menu li:hover .peta-menu,
+.sub-menu-shop li:hover .peta-menu-shop,
+.main-menu li:hover .sub-menu-shop {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.sub-menu li i {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    font-size: 12px;
+    color: var(--primary-color);
+}
+
+.sub-menu-shop li i {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    font-size: 12px;
+    color: var(--primary-color);
+}
+.toggle-box a
+{
+    display: block;
+    margin-right: 10px;
+}
+
+.toggle-box a span {
+    height: 1px;
+    width: 25px;
+    display: block;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    margin: 6px 0;
+    transition: 0.4s;
+    margin-left: auto;
+}
+
+
+.toggle-box a .dot1 {
+    transform: translateX(-1px);
+}
+
+.toggle-box a .dot2 {
+    transform: translateX(-8px);
+}
+
+.toggle-box a .dot3 {
+    transform: translateX(8px);
+}
+
+.toggle-box a .dot4 {
+    transform: translateX(5px);
+}
+
+.toggle-box a:hover .dot2 {
+    transform: translateX(8px);
+}
+
+.toggle-box a:hover .dot3 {
+    transform: translateX(-8px);
+}
+
+.toggle-box a:hover .dot1 {
+    transform: translateX(2px);
+}
+
+.toggle-box a:hover .dot4 {
+    transform: translateX(1px);
+}
+
+/* =========================  slidar offcanvas =================================*/
+.offcanvas-end {
+    overflow-y: scroll;
+    width: 400px;
+    background: var(--secondary-color);
+    padding: 40px 40px 30px
+}
+
+.info-close {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 30px;
+    text-align: right;
+}
+
+
+/* ===================================  banner slidar ========================= */
+
+#banner .item {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+.sildar-content {
+
+    text-align: center;
+}
+
+.sildar-content h4 {
+    line-height: 35px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-size: 25px;
+    color: var(--primary-color);
+    font-family: 'Miniver';
+    margin: 30px auto;
+}
+
+.sildar-content h1 {
+    font-size: 75px;
+    font-family: 'Metropolis 1920';
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    margin: 0 30px;
+}
+
+.sildar-content p {
+
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 160px;
+}
+
+.eltdf-rf-col-holder.sildar-btn button {
+    padding: 0 50PX;
+    font-size: 12px;
+}
+
+.eltdf-rf-col-holder.sildar-btn button::after {
+    left: 150px;
+}
+
+#banner .owl-dots {
+    margin-top: -120px;
+    text-align: center;
+    counter-reset: dots;
+}
+
+#banner .owl-nav button.owl-prev,
+#ab-slidar .owl-nav button.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 50px;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+#banner .owl-nav button:hover,
+#ab-slidar .owl-nav button:hover {
+    background-color: transparent;
+}
+
+#banner .owl-nav button.owl-next,
+#ab-slidar .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 50px;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+/* ============================= about us ======================================= */
+
+.about-sec .eltdf-st-text {
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.about-patt {
+    height: 370px;
+}
+
+/* =========================== testimonial ========================================== */
+.testimonial {
+    z-index: 3;
+}
+
+#testimonial .item {
+    margin: 0 10px;
+    cursor: grab;
+}
+
+#testimonial {
+    padding: 23% 0% 23% 20%
+}
+
+#testimonial .owl-dots button.owl-dot span,
+#banner .owl-dots button.owl-dot span,
+#ab-slidar .owl-dots button.owl-dot span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 1.9em;
+    background-color: transparent;
+    border: none;
+    padding-top: 5px;
+    position: relative;
+}
+
+#testimonial .owl-dots,
+#ab-slidar .owl-dots {
+    text-align: center;
+    margin: 12px 0 0;
+    counter-reset: dots;
+    margin-top: 46px;
+}
+
+#testimonial .owl-dots button.owl-dot,
+#banner .owl-dots button.owl-dot,
+#ab-slidar .owl-dots button.owl-dot {
+    margin: 0 10px;
+}
+
+#testimonial .owl-dots button.owl-dot span::before,
+#banner .owl-dots button.owl-dot span::before,
+#ab-slidar .owl-dots button.owl-dot span::before {
+    content: counter(dots);
+    counter-increment: dots;
+    position: absolute;
+    top: calc(100% - 1.5em);
+    left: 2px;
+    font-family: 'Caviar Dreams';
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: .23em;
+    color: #c9ab81;
+    transition: top .2s ease-out .2s, color .2s ease-in-out;
+}
+
+#testimonial .owl-dots button.owl-dot.active span::before,
+#banner .owl-dots button.owl-dot.active span::before,
+#ab-slidar .owl-dots button.owl-dot.active span::before {
+    top: 2px;
+}
+
+#testimonial .owl-dots button.owl-dot span::after,
+#banner .owl-dots button.owl-dot span::after,
+#ab-slidar .owl-dots button.owl-dot span::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-top: 1px solid #c9ab81;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform .2s ease-in .1s, -webkit-transform .2s ease-in .1s
+}
+
+#testimonial .owl-dots button.owl-dot.active span::after,
+#banner .owl-dots button.owl-dot.active span::after,
+#ab-slidar .owl-dots button.owl-dot.active span::after {
+    transform: translateY(-8px);
+    border-bottom: 1px solid #c9ab81;
+
+}
+
+#testimonial .testi-content img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+}
+
+#testimonial .eltdf-testimonial-text,
+#ab-slidar .eltdf-testimonial-text {
+    font-family: 'Miniver';
+    letter-spacing: .04em;
+    color: #afb8b8;
+    font-size: 22px;
+    margin-top: 36px;
+    line-height: 39px;
+    padding: 0 10px;
+}
+
+.testimonial-author {
+    margin-top: 30px;
+    color: var(--primary-color);
+    font-family: 'Caviar Dreams';
+    font-size: 19px;
+    line-height: 1.52em;
+    letter-spacing: .23em;
+    font-weight: 400;
+
+}
+
+.testimonials-author-job {
+    margin: 5px 0;
+    font-size: 19px;
+
+}
+
+/* =============================== special selection menu========================== */
+.selection-menu {
+    z-index: 3;
+}
+
+.sel-menu-background {
+    top: 85%;
+    left: -60px;
+    background-image: url(../image/home/spe-menu-bg.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+
+.pricing-holdar .pricing-item {
+    margin-bottom: 35px;
+}
+
+.pricing-item h6,
+.pricing-item span {
+    font-family: 'Caviar Dreams';
+    font-size: 17px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primary-color);
+    display: table-cell;
+    width: 1%;
+    white-space: nowrap;
+}
+
+/* .pricing-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
+
+.pricing-item .eltdf-pricing-lines {
+    display: table-cell;
+    width: 98%;
+    height: 2px;
+    border-bottom: 1px solid #715b3e;
+    bottom: 8px
+
+}
+
+.eltdf-pricing-desc {
+    font-size: 19px;
+    margin-top: 4px;
+}
+
+.pricing-item .eltdf-pricing-lines::before {
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid #715b3e;
+
+}
+
+.pricing-item span {
+    font-size: 19px;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+/* =========================  = our tips section start ======================== */
+
+.tips-content .intro-titile p {
+    font-size: 41px;
+    padding: 0 18px;
+}
+
+.tips-content .eltdf-st-text {
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.eltdf-st-button ul li a {
+    font-size: 14px !important;
+    line-height: 2em;
+    font-weight: 300;
+    letter-spacing: .36em;
+    margin-top: 35px;
+    font-family: 'Open Sans Condensed';
+}
+
+/* =============================== video-section =============================== */
+.video-section {
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: 3;
+}
+
+.vc-colum-inner a {
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.vc-colum-inner a svg circle.eltdf-popout {
+    fill: none;
+    stroke: currentColor;
+    stroke-dashoffset: 258;
+    stroke-dasharray: 258;
+    stroke-linejoin: round;
+    stroke-width: 1.4;
+    stroke-miterlimit: 10;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    stroke-linecap: butt;
+    transition: all .7s ease;
+}
+
+.vc-colum-inner a:hover .eltdf-popout {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 258;
+}
+
+
+/* ================================ our menu ========================================= */
+
+.row {
+    position: relative;
+    z-index: 1;
+}
+
+.eltdf-pl-item-inner .eltdf-pli-image::before {
+    position: absolute;
+    content: '';
+    width: 75%;
+    height: 0%;
+    background-color: var(--secondary-color);
+    top: 35px;
+    left: 35px;
+    visibility: hidden;
+    transition: .5s cubic-bezier(.48, .57, .33, .89);
+
+}
+
+.eltdf-pli-image .blog-patten {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 40%;
+    left: 40%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0, 0);
+    transform-origin: right;
+    transition: .5s cubic-bezier(.48, .57, .33, .89);
+
+}
+
+.eltdf-pl-item-inner:hover .eltdf-pli-image .blog-patten {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+}
+
+.eltdf-pl-item-inner:hover .eltdf-pli-image::before {
+    opacity: 1;
+    height: 85%;
+    visibility: visible;
+}
+
+.eltdf-pli-text-holder {
+
+    margin: 38px 0;
+    text-align: center;
+}
+
+.eltdf-pli-text-holder a {
+    font-size: 19px;
+    margin-top: 5px;
+
+}
+
+.eltdf-pli-text-holder a:hover {
+    color: var(--primary-color);
+}
+
+.eltdf-pli-text-holder h5 {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-family: 'Caviar Dreams';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* ==================================  booking table ======================================= */
+.booking-table {
+    background-color: var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    z-index: 3;
+}
+
+.intro-titile h4 {
+    font-size: 19px;
+    font-family: 'Miniver';
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.intro-titile p {
+    font-size: 48px;
+    color: var(--primary-color);
+    font-family: 'Caviar Dreams';
+    letter-spacing: .22em;
+    padding: 0 25px;
+}
+
+.decor img {
+    width: 42px;
+
+}
+
+.clearfix select,
+.eltdf-rf-col-holder input {
+    appearance: none;
+    width: 100%;
+    padding: 11px 23px 8px;
+    border-color: #715b3e;
+    font-family: inherit;
+    line-height: 30px;
+    font-size: 17px;
+    background-color: transparent;
+    outline: none;
+    color: var(--white-color);
+    font-weight: 300;
+
+}
+
+.clearfix select option {
+    background: #0f1d22;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.eltdf-rf-col-holder input {
+    border: 1px solid var(--border-color);
+}
+
+.eltdf-rf-col-holder button {
+    padding: 0 45px;
+    height: 50px;
+    letter-spacing: 4px;
+    border: 1px solid var(--primary-color);
+    font-size: 14px;
+    font-weight: 300;
+    background-color: transparent;
+    color: var(--white-color);
+    position: relative;
+    font-family: 'Open Sans Condensed';
+    overflow: hidden;
+}
+
+.eltdf-rf-col-holder button::before,
+.eltdf-rf-col-holder button::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: var(--primary-color);
+    top: 0px;
+    left: 47px;
+    transition: .4s;
+    transform-origin: top;
+    transform: rotate(72deg) scale(1, 0);
+}
+
+.eltdf-rf-col-holder button::after {
+    bottom: 0;
+    top: -2px;
+    left: 125px;
+    transform-origin: bottom;
+}
+
+.eltdf-rf-col-holder button:hover::before,
+.eltdf-rf-col-holder button:hover::after {
+
+    transform: rotate(72deg) scale(1, 1);
+}
+
+.eltdf-rf-copyright {
+
+    color: #c5c5c5;
+    font-size: 17px;
+}
+
+
+/* ========================================= footer =========================================== */
+footer {
+    padding: 130px 0 144px;
+    background-color: var(--dark-color);
+}
+
+footer .widget {
+    margin-bottom: 10px;
+}
+
+.text-widget p,
+.text-widget a,
+.footer-social-btn ul li a {
+    font-size: 19px;
+}
+
+.text-widget a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social-btn ul li {
+    margin: 18px 43px;
+}
+
+.footer-social-btn ul li a {
+    text-transform: capitalize;
+    color: var(--white-color);
+    position: relative;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+.footer-social-btn ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 0.5px;
+    background-color: var(--primary-color);
+    width: 100%;
+    /* transform-origin: 100%, 100%; */
+    /* transform: scale(1, 1); */
+}
+
+.footer-social-btn ul li a::after {
+    content: '';
+    position: absolute;
+    top: 85%;
+    left: 0;
+    height: 0.5px;
+    background-color: var(--primary-color);
+    width: 100%;
+    /* transform: scale(1, 1); */
+    /* transform-origin: 100% ,100%; */
+}
+
+.footer-social-btn ul li a:hover::before,
+.footer-social-btn ul li a:hover::after {
+    transform-origin: 100% 0;
+    transform: scale(0, 1);
+    transition: .4s;
+
+}
+
+.footer-social-btn ul li a:hover .eltdf-btn-first-line,
+.footer-social-btn ul li a:hover .eltdf-btn-second-line {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: .5s cubic-bezier(.48, .57, .33, .89) .5s;
+}
+
+.eltdf-btn-first-line {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 0.5px;
+    background-color: var(--primary-color);
+    width: 0;
+    vertical-align: middle;
+}
+
+.eltdf-btn-second-line {
+
+    position: absolute;
+    top: 85%;
+    left: 0;
+    height: 0.5px;
+    background-color: var(--primary-color);
+    width: 0;
+}
+
+/* ===================================  section grid ====================================================== */
+.eltdf-grid-column-1,
+.eltdf-grid-column-2,
+.eltdf-grid-column-3,
+.eltdf-grid-column-4 {
+    position: absolute;
+    top: 0;
+    left: 130px;
+    height: 100%;
+    z-index: 0;
+    border-right: 1px solid #21221e;
+
+}
+
+.eltdf-grid-column-2 {
+    left: 340px;
+}
+
+.eltdf-grid-column-3 {
+    left: 550px;
+}
+
+.eltdf-grid-column-4 {
+    left: 770px;
+}
+
+.eltdf-grid-columns-5 .eltdf-grid-line {
+    width: 15%;
+}
+
+/* =======================================================  about page =============================================== */
+.about-banner {
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-title .sub-title p {
+    font-size: 48px;
+    text-transform: uppercase;
+
+}
+
+.about-title p {
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+/* ================================= about slidar========================================================= */
+#ab-slidar .testi-content img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+}
+
+#ab-slidar .owl-nav button.owl-next {
+    top: 20%;
+    right: -60PX;
+}
+
+#ab-slidar .owl-nav button.owl-prev {
+    top: 20%;
+    left: -60PX;
+}
+
+/* ===============================   our chefs ============================================= */
+.our-chef .intro-titile {
+    margin: 100px 0;
+}
+
+.our-chef .footer-social-btn {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.eltdf-pl-item-inner:hover .footer-social-btn {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: 0.6s;
+}
+/* ============================== our menu ================================================= */
+.selection-menu.APPETIZERS .intro-titile p 
+{
+    font-size: 28px;
+}
+
+/* =================================  our kitchen ============================================== */
+.kitchen-content .main-content {
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+.kitchen-content .eltdf-rf-col-holder button::after {
+    left: 143PX;
+}
+
+/* =========================================== booking page =============================================== */
+.visit-us .places a {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.visit-us .places a:hover {
+    color: var(--primary-color);
+}
+
+.visit-us .places h5 {
+    text-transform: uppercase;
+    font-family: 'Caviar Dreams';
+    color: var(--primary-color);
+    letter-spacing: 3px;
+}
+
+/* ==========================================  contact page ================================================= */
+.contact-sec {
+    margin-top: 100px;
+}
+
+/* ==========================================  contact page ================================================= */
+.contact-sec form input,
+.contact-sec form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    margin: 20px 0;
+    color: white;
+}
+
+.contact-sec form input::placeholder,
+.contact-sec form textarea::placeholder {
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.contact-sec button::after {
+    left: 100px;
+}
+
+/* ==================================== cooming soon ======================================== */
+.countdown-section .countdown-amount {
+    display: block;
+    font-size: 41px;
+    color: var(--primary-color);
+    font-family: 'Caviar Dreams';
+    margin: 0px 10px 20PX;
+}
+
+.countdown-section {
+
+    text-align: center;
+}
+
+.countdown-period {
+    display: block;
+    font-size: 19px;
+}
+
+.eltdf-rf-col-holder.COUN-BTN button::after {
+    left: 143PX;
+}
+
+/* ===============================  gallery portfolio ==================================================== */
+/* .eltdf-pl-item-inner:hover .eltdf-pli-image.gall-img::before
+{
+  height: 70%;
+} */
+.eltdf-pli-image.gall-img .image-content {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateY(30px);
+}
+
+.eltdf-pl-item-inner:hover .eltdf-pli-image.gall-img .image-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.gallery-breadcrumb h5 {
+    font-size: 19px;
+    color: var(--primary-color);
+    letter-spacing: 3px;
+}
+
+.gallery-breadcrumb .gall-breadcrumb {
+    font-size: 18px;
+    text-transform: capitalize;
+
+    color: white;
+}
+
+.gallery-breadcrumb .gall-breadcrumb i {
+    font-size: 12px;
+    color: var(--primary-color);
+    margin: 5px 10px;
+}
+
+.gallery-breadcrumb .gall-breadcrumb a {
+    color: white;
+    display: inline-block !important;
+}
+
+.gallery-breadcrumb .gall-breadcrumb a:hover {
+    color: var(--primary-color);
+}
+
+/* =================================  two col portfolio layout ========================================== */
+.two-col-port .eltdf-pl-item-inner .eltdf-pli-image.gall-img::before {
+    max-width: 85%;
+    left: 50px;
+}
+
+.two-col-port .eltdf-pl-item-inner:hover .eltdf-pli-image.gall-img::before {
+    max-height: 90%;
+
+}
+
+.two-col-port .eltdf-pli-image.gall-img .image-content {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateY(30px);
+}
+
+.two-col-port button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 19px;
+    margin: 0 15px 10px;
+    text-transform: capitalize;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.two-col-port button:hover {
+    color: var(--primary-color);
+}
+
+.tab-button {
+    margin: 50px 10px;
+    color: white;
+}
+
+.tab-button .nav-tab .nav-btn {
+    padding: 0 0px;
+}
+
+.btn {
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    line-height: 30px;
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.8s;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(.4, .08, 0, .97);
+}
+
+
+.btn:hover{
+    color: white;
+}
+
+.btn-active {
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.btn svg {
+    position: absolute;
+    left: -2.5%;
+    top: 0%;
+}
+
+.svg{
+    stroke-dashoffset: 301.59px;
+
+}
+
+.circle {
+    stroke-dasharray: 313.59px 313.59px;
+    stroke-dashoffset: 313.59px;
+    transition: all 0.8s;
+    transition-timing-function: cubic-bezier(.4, .08, 0, .97);
+    transform-origin: top center;
+}
+
+.btn:hover .circle {
+    stroke-dashoffset: 0;
+}
+
+/* ============================================== portfolio single ======================================= */
+.shrimp-pasta-img a {
+    margin: 0 0 30px 0;
+}
+
+.shrimp-pasta-content h3 {
+    font-size: 36px;
+    color: var(--primary-color);
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+}
+
+.shrimp-pasta-content p {
+    font-size: 19px;
+}
+
+.CATEGORY .eltdf-ps-info-title,
+.date .eltdf-ps-info-title,
+.producy-share .eltdf-ps-info-title {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.CATEGORY a,
+.date a {
+    font-size: 19px;
+    display: inline;
+}
+
+.eltdf-ps-back-btn a {
+    width: 19px;
+    height: 19px;
+    flex-wrap: wrap;
+}
+
+.eltdf-ps-back-btn a div {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #c9ab81;
+}
+
+.shrimp-pasta .icon {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.eltdf-ps-back-btn a div:nth-of-type(2n+1) {
+    margin-right: 7px;
+}
+
+.eltdf-ps-back-btn a div:first-of-type {
+    margin-bottom: 7px;
+}
+
+/* ======================================= blog page ===================================================== */
+.blog-content {
+    margin: 15px 0;
+}
+
+.blog-details .blog-content .blog-inf-top a {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.blog-details .blog-content .blog-inf-top a:hover {
+    color: var(--primary-color);
+}
+
+.blog-details .blog-content .blog-inf-top i {
+    font-size: 12px;
+
+}
+
+.blog-details .blog-content h5 {
+    font-size: 19px;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    color: var(--primary-color);
+}
+
+.blog-details .blog-content p {
+    font-size: 19px
+}
+/* ================================ post type ================================================== */
+
+.laurant-details .blog-inf-top a
+{
+    font-size: 18px;
+    margin: 0 5px;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 10px;
+}
+.laurant-details .blog-inf-top a:hover
+{
+    color: var(--primary-color);
+}
+.laurant-details .blog-inf-top i
+{
+    font-size: 10PX;
+    color: var(--primary-color);
+    margin: 0 5px;
+    margin-bottom: 10px;
+
+}
+.laurant-details .post-title h4
+{
+    font-size: 38px;
+    letter-spacing: 7px;
+    margin-bottom: 10px;
+}
+.laurant-details .wpb_wrapper
+{
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.laurant-details .wpb_wrapper blockquote
+{
+    font-family: Miniver,sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: .04em;
+    text-align: center;
+    color: #afb8b8;
+    margin: 10px 0;
+    padding: 15px 100px;
+}
+.author-description
+{
+    margin-bottom: 70px;
+}
+.author-des-content
+{
+    padding: 50px 65px;
+}
+.author-des-content a span
+{
+    font-size: 19px;
+    font-family: 'Caviar Dreams';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--primary-color);
+    
+}
+.author-des-content .eltdf-author-position
+{
+    font-size: 19px;
+}
+.eltdf-author-text
+{
+    font-size: 19px;
+}
+
+.author-social i
+{
+    margin-right: 18px;
+    color: var(--primary-color);
+    transition: 0.4s;
+}
+.eltdf-tags-holder 
+{
+    margin-bottom: 120px;
+}
+.author-social i:hover
+{
+    color: var(--border-color);
+}
+.eltdf-comment-holder-inner {
+    padding: 41px 0 20px;
+}
+.eltdf-comments-title {
+    margin-bottom: 28px;
+    font-size: 28px;
+    font-family: 'Caviar Dreams';
+    text-transform: uppercase;
+    color: var(--primary-color);
+    letter-spacing: 6px;
+}
+.eltdf-comment-date a {
+    float: right;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+ .eltdf-comment-date
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.post-comment-standard h3
+{
+    letter-spacing: 6px;
+    color: var(--primary-color);
+}
+.post-comment-standard textarea
+{
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    padding: 15px 18px;
+    outline: none;
+    margin-bottom: 20px;
+
+}
+.post-comment-standard textarea::placeholder , .eltdf-grid-row  input::placeholder
+{
+    color: white;
+    text-transform: capitalize;
+    font-size: 19px;
+    font-weight: 300;
+}
+.eltdf-grid-row  input 
+
+{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    padding: 15px 18px;
+    outline: none;
+   
+}
+.comment-form-cookies-consent label
+{
+  font-size: 19px;
+}
+.eltdf-comment-2
+{
+    padding-left: 130px;
+}
+ .eltdf-comment-info
+{
+    font-size: 19px;
+      font-family: 'Caviar Dreams'; 
+      text-transform: uppercase;
+      color: var(--primary-color);
+      letter-spacing: 4px;
+    margin-bottom: 10px;
+
+}
+.eltdf-text-holder p
+{
+    font-size: 19px;
+}
+.eltdf-rf-col-holder.post-btn button
+{
+    padding: 0 70px;
+}
+.eltdf-rf-col-holder.post-btn  button::after 
+{
+    left: 130px;
+}
+.eltdf-comment-text
+{
+    padding-left: 40px;
+}
+.laurant-details  .eltdf-tags-holder a
+{
+    font-size: 19px;
+    display: inline-block;
+    
+}
+.laurant-details  .eltdf-tags-holder a:hover
+{
+    color: var(--primary-color);
+}
+.laurant-details  .eltdf-tags-holder .social li 
+{
+    margin: 0 10px;
+}
+.laurant-details  .eltdf-tags-holder .social li i
+{
+    font-size: 15px;
+    color: var(--primary-color);
+
+}
+.laurant-details  .eltdf-tags-holder .social li i:hover
+{
+    color: var(--border-color);
+}
+.laurant-details .about h3
+{
+color: var(--primary-color);
+font-size: 17px;
+margin-bottom: 10px;
+letter-spacing: 3px;
+}
+.laurant-details .about p
+{
+    font-size: 19PX;
+    margin-bottom: 40px;
+}
+.laurant-details .about ul li
+{
+    margin-bottom: 5px;
+}
+.laurant-details .about ul li a
+{
+    font-size: 19px;
+    position: relative;
+    display: inline-block;
+    color: white;
+    transition: 0.4s;
+}
+.laurant-details .instagram-post h3
+{
+    font-size: 17px;
+    letter-spacing: .22em;
+    margin-top: 20px;
+    color: var(--primary-color);
+    padding-bottom: 30px;
+}
+.laurant-details .instagram-post
+{
+    margin-bottom: 45px;
+}
+.laurant-details .tags h3 , .laurant-details  .search h3
+{
+    color: var(--primary-color);
+font-size: 17px;
+margin-bottom: 10px;
+letter-spacing: 3px;
+}
+.laurant-details .tags a
+{
+    display: inline-block;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.laurant-details .tags a:hover
+{
+    color: var(--primary-color);
+}
+.laurant-details .search input
+{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    padding: 15px;
+    color: white;
+   
+}
+.laurant-details .search i
+{
+    position: absolute;
+    right:20px;
+   top: 20px;
+   color: var(--primary-color);
+}
+.laurant-details .search input::placeholder
+{
+    color: white;
+    font-weight: 300;
+}
+/* ===========================================  shop page =================================================== */
+.product-content p {
+    font-family: 'Caviar Dreams';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c9ab81;
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+
+.product-content .star li {
+    padding: 0 4px 0 0;
+}
+
+.product-content .star ul li i {
+    font-size: 12px;
+    color: #AFB8B8;
+}
+
+.product-content .star ul a {
+    font-size: 19px;
+    color: white;
+    padding-left: 15px;
+}
+
+.product-content .star a:hover {
+    color: var(--border-color);
+}
+
+.product-content .price a {
+    font-size: 12px;
+}
+
+.product-content .det {
+    font-size: 19px;
+    color: white;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+}
+
+form .quantity input {
+
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    outline: none;
+    color: white;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    margin-right: 25PX;
+}
+
+.product-content form .eltdf-rf-col-holder button::after {
+    left: 153px;
+}
+
+.product-content .product_meta {
+    margin: 50px 0 0;
+}
+
+.product_meta>span {
+    font-family: 'Caviar Dreams';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c9ab81;
+    margin: 25px 0;
+    color: #c9ab81;
+    font-size: 17px;
+    line-height: 1.58em;
+    letter-spacing: .22em;
+    display: block;
+    margin: 19px 0;
+    letter-spacing: .23em;
+}
+
+.price a {
+    color: var(--primary-color);
+    font-size: 20px !important;
+    display: inline-block;
+    font-weight: 400;
+    font-family: 'Caviar Dreams';
+    letter-spacing: 3px;
+
+}
+
+.product_meta>span span {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #fff;
+    letter-spacing: 0;
+    text-transform: none;
+    background-color: #0b1315;
+
+}
+
+.product_meta>span a {
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: 0;
+    transition: 0.4s;
+}
+
+.product_meta>span a:hover {
+    color: var(--primary-color);
+}
+
+.producy-share .eltdf-social-title {
+    font-size: 19px;
+    letter-spacing: 3px;
+}
+
+.producy-share ul li {
+    margin: 0 10px;
+    padding-top: 4px;
+
+}
+
+.producy-share ul li a i {
+    font-size: 15px;
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: 0.4s;
+}
+
+.producy-share ul li a i:hover {
+    color: var(--border-color);
+}
+
+.nav-pills {
+    position: relative;
+    border-bottom: 1px solid hsl(196, 12%, 36%);
+
+}
+
+.nav-pills:before 
+{
+    position: absolute;
+    content: '';
+    top: 100%;
+    background-color: #c9ab81;
+    height: 1%;
+    width: 30%;
+    transform: translatex(0px);
+    transition: 0.5s;
+}
+
+.nav-pills:hover:before 
+{
+    transform: translatex(250px);
+    width: 40%;
+
+}
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.nav-pills .nav-item .nav-link {
+    color: var(--primary-color);
+    font-size: 17px;
+    line-height: 1.58em;
+    letter-spacing: .22em;
+    padding: 12px 48px;
+    text-transform: uppercase;
+    font-family: 'Caviar Dreams';
+}
+
+#pills-tabContent .tab-pane {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 29px;
+    padding: 0 15px;
+
+    margin: 10px 0 0 0;
+}
+
+#pills-tabContent .tab-pane table th {
+    color: #c9ab81;
+    width: 1%;
+    padding: 0 10px 0 0;
+    text-align: left;
+}
+
+#pills-tabContent .tab-pane table td {
+    text-align: left;
+}
+
+#review .comment .Reviews-title {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 8px 0 24px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: .23em;
+    text-align: left;
+}
+
+.commentlist .star li {
+    padding: 0 4px 0 0;
+}
+
+.commentlist .star ul li i {
+    font-size: 12px;
+    color: #AFB8B8;
+}
+
+.commentlist img {
+    width: 100%;
+    height: auto;
+}
+
+.meta .review__author {
+    font-weight: 800;
+}
+
+.add-review-form {
+    margin: 100px 0 0;
+}
+
+.comment-respond h2 {
+    letter-spacing: 5px;
+    color: var(--primary-color);
+    font-size: 28px;
+    margin: 25px 0;
+}
+
+.comment-form .star li i {
+    font-size: 12px;
+    color: #afb8b8;
+    line-height: 1;
+    letter-spacing: 5px;
+}
+
+.comment-form-comment textarea,
+.comment-form-author input,
+.comment-form-email input {
+    width: 100%;
+    margin: 0 0 28px;
+    padding: 7px 23px 3px;
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: inherit;
+    line-height: calc(50px - (14px - 2px));
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #715b3e;
+    border-radius: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.form-submit input[type=submit] {
+    padding: 10px 71px;
+    font-size: 14px;
+    line-height: 2em;
+    font-weight: 300;
+    letter-spacing: .36em;
+    font-family: "Open Sans Condensed", sans-serif;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.form-submit input[type=submit]:hover {
+    background-color: var(--primary-color);
+}
+
+
+
+.related-product h3 {
+    font-size: 28px;
+    letter-spacing: 5px;
+    color: var(--primary-color);
+    margin: 30px 0;
+}
+
+.row-col-box.related-product-box .img-box::before {
+    width: 80%;
+    left: 25px;
+    height: 0;
+    top: 25px;
+}
+
+.row-col-box.related-product-box .img-box:hover::before {
+    height: 80%;
+}
+
+.row-col-box.related-product-box .img-box .eltdf-rf-col-holder button {
+    padding: 0 34px;
+    margin: 0 15px;
+}
+
+.row-col-box.related-product-box .img-box .eltdf-rf-col-holder {
+    left: 10px;
+}
+
+.row-col-box.related-product-box .img-box .eltdf-rf-col-holder button::after {
+    left: 121px;
+}
+
+/* ===========================  shop three col ======================================================== */
+.row-col-content {
+    margin: 22px 0 40px;
+    text-align: center;
+}
+
+.row-col-box .img-box::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 15px;
+    left: 15px;
+    background-color: var(--secondary-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.row-col-box .img-box:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.row-col-box .img-box:hover .eltdf-rf-col-holder {
+    opacity: 1;
+    visibility: visible;
+}
+
+.row-col-box .img-box .eltdf-rf-col-holder button::after {
+    left: 155px;
+}
+
+.row-col-box .img-box .eltdf-rf-col-holder {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.row-col-content h6 {
+    color: var(--primary-color);
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.row-col-content .star {
+    font-size: 12px;
+    color: #afb8b8;
+    margin: 10px 0;
+}
+
+.row-col-content .star li {
+    padding: 0 2px;
+}
+
+.row-col-content p {
+    color: var(--primary-color);
+    font-size: 17px;
+    font-family: 'Caviar Dreams';
+
+}
